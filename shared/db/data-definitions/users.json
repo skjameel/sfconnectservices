@@ -1,0 +1,48 @@
+{
+    "dataDefinitions": {
+      "Id": {
+        "type": "DataTypes.INTEGER",
+        "primaryKey": true,
+        "autoIncrement": true,
+        "allowNull": false
+      },
+      "UserType": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "referenceID": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "username": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "password": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Isactive": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      }
+    },
+    "list": {
+      "tableInfo": {
+        "type": "table",
+        "name": "users",
+        "baseQuery": "select * from users",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    },
+    "detail": {
+      "tableInfo": {
+        "type": "table",
+        "name": "users",
+        "baseQuery": "select * from users",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    }
+  }

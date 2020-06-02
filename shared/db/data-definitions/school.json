@@ -1,0 +1,52 @@
+{
+    "dataDefinitions": {
+      "Id": {
+        "type": "DataTypes.INTEGER",
+        "primaryKey": true,
+        "autoIncrement": true,
+        "allowNull": false
+      },
+      "school_name": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Address": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "CityId": {
+        "type": "DataTypes.INTEGERs",
+        "allowNull": true
+      },
+      "Isactive": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "createdBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "updatedBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      }
+    },
+    "list": {
+      "tableInfo": {
+        "type": "table",
+        "name": "school",
+        "baseQuery": "select * from school",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    },
+    "detail": {
+      "tableInfo": {
+        "type": "table",
+        "name": "school",
+        "baseQuery": "select * from school",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    }
+  }

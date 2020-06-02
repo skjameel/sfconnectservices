@@ -1,0 +1,40 @@
+{
+    "dataDefinitions": {
+      "Id": {
+        "type": "DataTypes.INTEGER",
+        "primaryKey": true,
+        "autoIncrement": true,
+        "allowNull": false
+      },
+      "Firstname": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Lastname": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Isactive": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      }
+    },
+    "list": {
+      "tableInfo": {
+        "type": "table",
+        "name": "superadmin",
+        "baseQuery": "select * from superadmin",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    },
+    "detail": {
+      "tableInfo": {
+        "type": "table",
+        "name": "superadmin",
+        "baseQuery": "select * from superadmin",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    }
+  }

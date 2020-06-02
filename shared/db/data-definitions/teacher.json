@@ -1,0 +1,56 @@
+{
+    "dataDefinitions": {
+      "Id": {
+        "type": "DataTypes.INTEGER",
+        "primaryKey": true,
+        "autoIncrement": true,
+        "allowNull": false
+      },
+      "Firstname": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Lastname": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "SchoolId": {
+        "type": "DataTypes.INTEGER",
+        "allowNull": true
+      },
+      "SubjectId": {
+        "type": "DataTypes.INTEGER",
+        "allowNull": true
+      },
+      "Isactive": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "createdBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "updatedBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      }
+    },
+    "list": {
+      "tableInfo": {
+        "type": "table",
+        "name": "teacher",
+        "baseQuery": "select * from teacher",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    },
+    "detail": {
+      "tableInfo": {
+        "type": "table",
+        "name": "teacher",
+        "baseQuery": "select * from teacher",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    }
+  }

@@ -1,0 +1,40 @@
+{
+    "dataDefinitions": {
+      "Id": {
+        "type": "DataTypes.INTEGER",
+        "primaryKey": true,
+        "autoIncrement": true,
+        "allowNull": false
+      },
+      "Type": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Description": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Isactive": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      }
+    },
+    "list": {
+      "tableInfo": {
+        "type": "table",
+        "name": "usertype",
+        "baseQuery": "select * from usertype",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    },
+    "detail": {
+      "tableInfo": {
+        "type": "table",
+        "name": "usertype",
+        "baseQuery": "select * from usertype",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    }
+  }

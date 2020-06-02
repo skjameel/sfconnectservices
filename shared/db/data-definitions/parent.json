@@ -1,0 +1,64 @@
+{
+    "dataDefinitions": {
+      "Id": {
+        "type": "DataTypes.INTEGER",
+        "primaryKey": true,
+        "autoIncrement": true,
+        "allowNull": false
+      },
+      "Firstname": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Lastname": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "StudentId": {
+        "type": "DataTypes.INTEGER",
+        "allowNull": true
+      },
+      "Address": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Phone_number": {
+        "type": "DataTypes.INTEGER",
+        "allowNull": false
+      },
+      "Email_id": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Isactive": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "createdBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "updatedBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      }
+    },
+    "list": {
+      "tableInfo": {
+        "type": "table",
+        "name": "parent",
+        "baseQuery": "select * from parent",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    },
+    "detail": {
+      "tableInfo": {
+        "type": "table",
+        "name": "parent",
+        "baseQuery": "select * from parent",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    }
+  }

@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "root",
+    "password": "test1234",
+    "database": "sfconnect",
+    "host": "database-1.cjzfzjqecwhj.us-east-2.rds.amazonaws.com",
+    "port": "3306",
+    "dialect": "mysql",
+    "define": {
+      "freezeTableName": true
+    },
+    "application": {
+      "port": 4000
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "dataDefinitions": {
+      "Id": {
+        "type": "DataTypes.INTEGER",
+        "primaryKey": true,
+        "autoIncrement": true,
+        "allowNull": false
+      },
+      "City_name": {
+        "type": "DataTypes.STRING",
+        "allowNull": true
+      },
+      "Country": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "Isactive": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "createdBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "updatedBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      }
+    },
+    "list": {
+      "tableInfo": {
+        "type": "table",
+        "name": "city",
+        "baseQuery": "select * from city",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    },
+    "detail": {
+      "tableInfo": {
+        "type": "table",
+        "name": "city",
+        "baseQuery": "select * from city",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    }
+  }

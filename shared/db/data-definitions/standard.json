@@ -1,0 +1,52 @@
+{
+    "dataDefinitions": {
+      "Id": {
+        "type": "DataTypes.INTEGER",
+        "primaryKey": true,
+        "autoIncrement": true,
+        "allowNull": false
+      },
+      "standard_name": {
+        "type": "DataTypes.STRING",
+        "allowNull": true
+      },
+      "Description": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "SchoolId": {
+        "type": "DataTypes.INTEGER",
+        "allowNull": true
+      },
+      "Isactive": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "createdBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      },
+      "updatedBy": {
+        "type": "DataTypes.STRING",
+        "allowNull": false
+      }
+    },
+    "list": {
+      "tableInfo": {
+        "type": "table",
+        "name": "standard",
+        "baseQuery": "select * from standard",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    },
+    "detail": {
+      "tableInfo": {
+        "type": "table",
+        "name": "standard",
+        "baseQuery": "select * from standard",
+        "whereClause": "Id",
+        "order": "desc"
+      }
+    }
+  }
