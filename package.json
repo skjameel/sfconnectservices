@@ -35,7 +35,7 @@
     "pg-hstore": "^2.3.2",
     "puppeteer": "^1.13.0",
     "request": "^2.88.0",
-    "sequelize": "^4.29.2",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^3.2.0",
     "sha256": "^0.2.0",
     "util": "^0.10.3"
